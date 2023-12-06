@@ -6,9 +6,8 @@ import Link from "next/link";
 import type { MenuProps } from "antd";
 
 import { IoChevronDownOutline } from "react-icons/io5";
-// import "antd/dist/antd.css";
-import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
+import dynamic from "next/dynamic";
 const Dropdown = dynamic(async () => await import("antd/es/dropdown"), {
   ssr: false,
 });
